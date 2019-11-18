@@ -6,8 +6,8 @@ if [$( docker container ls -q --filter name=myserver1_c) != '' ]; then
  docker container rm myserver1_c --force
 fi
 
-if [$( docker image ls -q --filter reference=mydb)!='']; then
- docker image rm myserver1_c
+if [$( docker image ls -q --filter reference=myserver_img)!='']; then
+ docker image rm myserver_img
 fi
 
  docker image build -t myserver_img .
