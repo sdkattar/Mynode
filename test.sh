@@ -12,4 +12,4 @@ fi
 
  docker image build -t myserver_img .
 
- docker container run -itd -p 4400:4000 --name myserver1_c myserver_img
+ docker container run -itd -p 4000:4000 --name myserver1_c myserver_img
